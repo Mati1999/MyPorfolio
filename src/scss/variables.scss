@@ -1,6 +1,10 @@
 $details: #00ffa6;
 $details-transition: #00b173;
+$details-secondary: #004c31;
+$details-terciary: #00fbff;
+
 $general: #222;
+$general-light: #474747;
 
 @mixin medidas($width, $height) {
     width: $width;

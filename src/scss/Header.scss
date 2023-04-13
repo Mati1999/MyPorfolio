@@ -1,14 +1,18 @@
 @import './variables.scss';
 
 header {
-    @include medidas(100vw, 10vh);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    @include medidas(100%, 10vh);
     padding: 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $general;
 
     img {
-        @include medidas(5%, auto);
+        @include medidas(30%, auto);
     }
     ul {
         @include medidas(35%, 100%);
@@ -39,7 +43,6 @@ header {
         }
     }
     a {
-        font-weight: 600;
         text-decoration: none;
         letter-spacing: 2px;
         color: $details;
@@ -47,6 +50,11 @@ header {
         &:hover {
             color: $details-transition;
             transition: 0.3s all ease;
+            cursor: pointer;
         }
     }
+}
+
+.active {
+    color: $details;
 }
