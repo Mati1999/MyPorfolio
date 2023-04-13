@@ -1,0 +1,8 @@
+$details: #00ffa6;
+$details-transition: #00b173;
+$general: #222;
+
+@mixin medidas($width, $height) {
+    width: $width;
+    height: $height;
+}
