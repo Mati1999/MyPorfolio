@@ -6,6 +6,9 @@ section {
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
+    position: sticky;
+    top: 0;
+
     div {
         @include medidas(40%, 30%);
         display: flex;

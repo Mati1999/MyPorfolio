@@ -1,22 +1,14 @@
 @import './variables.scss';
 
 .tech {
-    @include medidas(100%, 100vh);
+    @include medidas(100%, 90vh);
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    position: relative;
-
-    &-block {
-        @include medidas(90%, 100vh);
-        border-radius: 1rem;
-        display: flex;
-        align-items: flex-start;
-        background-color: $general;
-        position: absolute;
-        top: -10rem;
-        padding: 1rem 0 0 0;
-    }
+    position: sticky;
+    top: 0;
+    background-color: $general;
+    padding: 2rem;
 }
 
 .tech-column {
@@ -38,7 +30,7 @@
     }
 
     &--title {
-        @include medidas(100%, 10rem);
+        @include medidas(100%, 6rem);
         margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
