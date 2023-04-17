@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 .projects {
-    @include medidas(100%, 120vh);
+    @include medidas(100%, 110vh);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,42 +9,38 @@
     position: sticky;
     top: 0;
     background-color: $details-secondary;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     h2 {
         margin-bottom: 2rem;
     }
 }
 
-.projects-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
 .project {
-    @include medidas(30%, 40%);
+    @include medidas(auto, 45%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.projects-container {
+    @include medidas(100%, 75%);
+}
+
 .project-content {
-    @include medidas(50%, 100%);
+    @include medidas(10rem, 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    div {
-        @include medidas(100%, auto);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
     img {
-        @include medidas(100%, auto);
+        @include medidas(100%, 80%);
         object-fit: contain;
+    }
+    div {
+        @include medidas(100%, 20%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     a {
         text-decoration: none;

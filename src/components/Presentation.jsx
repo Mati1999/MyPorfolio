@@ -7,7 +7,7 @@ const Presentation = () => {
         <section id='Presentation' className='presentation'>
             <div>
                 <h1>Matias Aguilera</h1>
-                <h2>Full Stack developer & Mentor</h2>
+                <h2>Front-End developer & Mentor</h2>
             </div>
             <figure>
                 <img src={profilePicture} alt='Profile' />

@@ -13,3 +13,7 @@ body {
     background-color: $general;
     font-family: 'Poppins', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}

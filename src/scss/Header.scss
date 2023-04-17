@@ -14,47 +14,22 @@ header {
     img {
         @include medidas(30%, auto);
     }
-    ul {
-        @include medidas(35%, 100%);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-    li {
-        border-bottom: 2px solid transparent;
-        list-style-type: none;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            bottom: 0;
-            background-color: $details-transition;
-            left: 0;
-            transition: all 0.3s ease-in-out;
-        }
-
-        &:hover::before {
-            width: 100%;
-        }
-    }
-    a {
-        text-decoration: none;
-        letter-spacing: 2px;
-        color: $details;
-
-        &:hover {
-            color: $details-transition;
-            transition: 0.3s all ease;
-            cursor: pointer;
-        }
-    }
 }
 
-.active {
+.socialLinks {
+    @include medidas(15%, 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+        @include medidas(100%, 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+ion-icon {
+    @include medidas(60%, 60%);
     color: $details;
 }
