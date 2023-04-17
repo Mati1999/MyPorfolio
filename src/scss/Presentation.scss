@@ -1,6 +1,11 @@
 @import './variables.scss';
 
 section {
+    h1 {
+        font-size: 4rem;
+        font-family: 'Abril Fatface', cursive;
+        text-shadow: 5px 5px 10px black;
+    }
     @include medidas(100%, 100vh);
     display: flex;
     justify-content: center;

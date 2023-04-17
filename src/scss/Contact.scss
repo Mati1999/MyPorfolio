@@ -1,0 +1,98 @@
+@import './variables.scss';
+
+.contact {
+    @include medidas(100%, 100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: $general;
+    padding: 5rem 2rem 2rem 2rem;
+
+    form {
+        @include medidas(70%, 70%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .names {
+        @include medidas(90%, 20%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            @include medidas(48%, 100%);
+        }
+    }
+    input {
+        @include medidas(90%, 20%);
+        background-color: transparent;
+        outline: none;
+        border: 1px solid $details;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        &::placeholder {
+            color: $details-transparent;
+        }
+        &:-webkit-autofill,
+        &:-webkit-autofill:focus {
+            transition: background-color 600000s 0s, color 600000s 0s;
+        }
+    }
+    textarea {
+        @include medidas(90%, 60%);
+        background-color: transparent;
+        outline: none;
+        border: 1px solid $details;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        resize: none;
+        &::placeholder {
+            color: $details-transparent;
+        }
+    }
+
+    button {
+        @include medidas(30%, 20%);
+        background-color: transparent;
+        outline: none;
+        border: 1px solid $details-transition;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        &:hover {
+            background-color: $details-transition;
+            color: black;
+            transition: 0.3s all ease;
+        }
+    }
+}
+
+.Toastify__toast-container {
+    @include medidas(100%, 20%);
+    position: fixed;
+    top: 10rem;
+}
+
+.Toastify__toast-container--top-right {
+    top: 5rem !important;
+}
+
+:root {
+    --toastify-color-success: #07bc0c;
+    .Toastify__toast-theme--light {
+        background: $general-light;
+        color: var(--toastify-text-color-light);
+    }
+    .Toastify__close-button--light {
+        @include medidas(2rem, 2rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        opacity: 0.3;
+    }
+}

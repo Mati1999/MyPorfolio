@@ -4,9 +4,9 @@ import '../scss/Presentation.scss';
 
 const Presentation = () => {
     return (
-        <section id='Presentation'>
+        <section id='Presentation' className='presentation'>
             <div>
-                <h1>Hi! I'm Matias Aguilera</h1>
+                <h1>Matias Aguilera</h1>
                 <h2>Full Stack developer & Mentor</h2>
             </div>
             <figure>

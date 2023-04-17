@@ -1,14 +1,22 @@
 @import './variables.scss';
 
 .tech {
-    @include medidas(100%, 90vh);
+    @include medidas(100%, 120vh);
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     position: sticky;
-    top: 0;
+    top: 3rem;
     background-color: $general;
     padding: 2rem;
+    .tech-col {
+        @include medidas(100%, 60%);
+        display: flex;
+    }
+    h2 {
+        margin-bottom: 2rem;
+    }
 }
 
 .tech-column {
@@ -56,4 +64,10 @@
             color: $details-terciary;
         }
     }
+}
+
+.technologies {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
