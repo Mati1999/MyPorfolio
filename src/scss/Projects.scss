@@ -1,13 +1,11 @@
 @import './variables.scss';
 
 .projects {
-    @include medidas(100%, 110vh);
+    @include medidas(100%, 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    position: sticky;
-    top: 0;
     background-color: $details-secondary;
     padding: 5rem 2rem 2rem 2rem;
     h2 {
@@ -15,36 +13,73 @@
     }
 }
 
+.projects-container {
+    @include medidas(100%, 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
 .project {
-    @include medidas(auto, 45%);
+    @include medidas(60%, 35%);
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
-.projects-container {
-    @include medidas(100%, 75%);
+.project-info {
+    @include medidas(50%, 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
 
 .project-content {
-    @include medidas(10rem, 100%);
+    @include medidas(40%, 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+
     img {
-        @include medidas(100%, 80%);
-        object-fit: contain;
+        @include medidas(100%, 12rem);
+        object-fit: cover;
+        border-radius: 1rem;
+        &:hover ~ div {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease;
+        }
     }
     div {
-        @include medidas(100%, 20%);
+        @include medidas(100%, 100%);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 7rem;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        background: $general-transparent;
+        border-radius: 1rem;
+        &:hover {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease;
+        }
+        transition: all 0.3s ease;
     }
     a {
         text-decoration: none;
-        color: white;
+        color: $details;
         position: relative;
 
         &::before {
@@ -53,7 +88,7 @@
             width: 0%;
             height: 2px;
             bottom: 0;
-            background-color: $details-terciary;
+            background-color: $details;
             left: 0;
             transition: all 0.3s ease-in-out;
         }
@@ -62,7 +97,7 @@
             width: 100%;
         }
         &:hover {
-            color: $details-terciary;
+            color: $details;
         }
     }
 }

@@ -3,7 +3,7 @@ import '../scss/AboutMe.scss';
 
 const AboutMe = () => {
     return (
-        <div className='AboutMeSection' id='AboutMe'>
+        <div className='AboutMeSection' id='aboutMe'>
             <h2>AboutMe</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus earum quasi, unde numquam nobis atque. Odit dignissimos quibusdam eaque unde repudiandae provident distinctio

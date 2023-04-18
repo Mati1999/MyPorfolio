@@ -6,8 +6,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    position: sticky;
-    top: 0;
     background-color: $general;
     padding: 5rem 2rem 2rem 2rem;
 
@@ -42,6 +40,14 @@
         &:-webkit-autofill:focus {
             transition: background-color 600000s 0s, color 600000s 0s;
         }
+        &:focus {
+            background-color: $details-transparent;
+            transition: all 0.3s ease;
+        }
+        &:focus::placeholder {
+            color: $details-transition;
+            transition: all 0.3s ease;
+        }
     }
     textarea {
         @include medidas(90%, 60%);
@@ -64,8 +70,7 @@
         border-radius: 0.5rem;
         font-weight: 600;
         &:hover {
-            background-color: $details-transition;
-            color: black;
+            background-color: $details-secondary;
             transition: 0.3s all ease;
         }
     }

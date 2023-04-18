@@ -10,20 +10,65 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: $general;
+}
 
+.logoContainer {
+    @include medidas(15%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     img {
-        @include medidas(30%, auto);
+        @include medidas(30%, 30%);
+        cursor: pointer;
     }
 }
 
-.socialLinks {
-    @include medidas(15%, 100%);
+.navigation {
+    @include medidas(50%, 100%);
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+        list-style-type: none;
+        @include medidas(20%, 50%);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $details;
+        a {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                bottom: 0;
+                background-color: $details;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+            &:hover {
+                color: $details;
+            }
+        }
+    }
+}
+.socialLinks {
+    @include medidas(20%, 100%);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
     a {
-        @include medidas(100%, 100%);
+        @include medidas(20%, 100%);
         display: flex;
         justify-content: center;
         align-items: center;
