@@ -6,8 +6,13 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: $details-secondary;
     padding: 5rem 2rem 2rem 2rem;
+    // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1220%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(34%2c 34%2c 34%2c 1)'%3e%3c/rect%3e%3cpath d='M -496.9448674305624%2c398 C -400.94%2c371.6 -208.94%2c257 -16.944867430562418%2c266 C 175.06%2c275 271.06%2c465 463.0551325694376%2c443 C 655.06%2c421 751.06%2c170.8 943.0551325694375%2c156 C 1135.06%2c141.2 1323.67%2c351.2 1423.0551325694375%2c369 C 1522.44%2c386.8 1436.61%2c269.8 1440%2c245' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -416.17254204402064%2c327 C -320.17%2c301.4 -128.17%2c200 63.827457955979376%2c199 C 255.83%2c198 351.83%2c312.2 543.8274579559794%2c322 C 735.83%2c331.8 831.83%2c240.2 1023.8274579559794%2c248 C 1215.83%2c255.8 1420.59%2c384 1503.8274579559793%2c361 C 1587.06%2c338 1452.77%2c178.6 1440%2c133' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -594.7980717294389%2c366 C -498.8%2c344.4 -306.8%2c244.4 -114.7980717294389%2c258 C 77.2%2c271.6 173.2%2c434 365.2019282705611%2c434 C 557.2%2c434 653.2%2c260.6 845.2019282705611%2c258 C 1037.2%2c255.4 1206.24%2c441 1325.201928270561%2c421 C 1444.16%2c401 1417.04%2c210.6 1440%2c158' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -338.2702750799053%2c336 C -242.27%2c289.8 -50.27%2c111.2 141.72972492009472%2c105 C 333.73%2c98.8 429.73%2c288.2 621.7297249200947%2c305 C 813.73%2c321.8 909.73%2c179.6 1101.7297249200947%2c189 C 1293.73%2c198.4 1514.08%2c337.4 1581.7297249200947%2c352 C 1649.38%2c366.6 1468.35%2c280 1440%2c262' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1220'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background: no-repeat
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1418%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(34%2c 34%2c 34%2c 1)'%3e%3c/rect%3e%3cpath d='M 1077%2c-211.7361814013948 C 944.6%2c-174.34 467%2c-99.54 415%2c-24.736181401394788 C 363%2c50.06 822.6%2c87.46 817%2c162.2638185986052 C 811.4%2c237.06 388.6%2c274.46 387%2c349.2638185986052 C 385.4%2c424.06 813%2c494.12 809%2c536.2638185986052 C 805%2c578.41 455.4%2c555.25 367%2c560' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 1171%2c-154.1357378850913 C 1000.6%2c-116.74 387.4%2c-41.94 319%2c32.86426211490872 C 250.6%2c107.66 831.4%2c145.06 829%2c219.8642621149087 C 826.6%2c294.66 266.2%2c332.06 307%2c406.86426211490874 C 347.8%2c481.66 969.2%2c563.24 1033%2c593.8642621149087 C 1096.8%2c624.49 707.4%2c566.77 626%2c560' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 445%2c-109.85541341238253 C 545.2%2c-72.46 914%2c2.34 946%2c77.14458658761747 C 978%2c151.94 589.4%2c189.34 605%2c264.1445865876175 C 620.6%2c338.94 1076.4%2c376.34 1024%2c451.1445865876175 C 971.6%2c525.94 328%2c616.37 343%2c638.1445865876175 C 358%2c659.92 947.8%2c575.63 1099%2c560' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1418'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: -20rem;
+
     h2 {
         margin-bottom: 2rem;
     }
@@ -19,7 +24,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .project {

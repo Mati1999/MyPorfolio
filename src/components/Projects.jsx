@@ -8,11 +8,11 @@ const Projects = () => {
             <h2>Projects</h2>
             <div className='projects-container '>
                 <div className='project '>
-                    <p className='project-info'>
+                    <p className='project-info' data-aos='fade-right' data-aos-duration='1000'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in quis ipsa fugiat facere! Odit, voluptatum neque? Reiciendis iste expedita eveniet neque nesciunt veritatis,
                         voluptates dolorem veniam dolores, error eaque.
                     </p>
-                    <div className='project-content'>
+                    <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
                         <img src={pic} alt='' />
                         <div>
                             <a href=''>Live</a>
@@ -21,24 +21,24 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className='project '>
-                    <div className='project-content'>
+                    <div className='project-content' data-aos='fade-right' data-aos-duration='1000'>
                         <img src={pic} alt='' />
                         <div>
                             <a href=''>Live</a>
                             <a href=''>Code</a>
                         </div>
                     </div>
-                    <p className='project-info'>
+                    <p className='project-info' data-aos='fade-left' data-aos-duration='1000'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in quis ipsa fugiat facere! Odit, voluptatum neque? Reiciendis iste expedita eveniet neque nesciunt veritatis,
                         voluptates dolorem veniam dolores, error eaque.
                     </p>
                 </div>
                 <div className='project '>
-                    <p className='project-info'>
+                    <p className='project-info' data-aos='fade-right' data-aos-duration='1000'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in quis ipsa fugiat facere! Odit, voluptatum neque? Reiciendis iste expedita eveniet neque nesciunt veritatis,
                         voluptates dolorem veniam dolores, error eaque.
                     </p>
-                    <div className='project-content'>
+                    <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
                         <img src={pic} alt='' />
                         <div>
                             <a href=''>Live</a>

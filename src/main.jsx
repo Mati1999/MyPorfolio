@@ -4,6 +4,9 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './scss/Main.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

@@ -1,6 +1,18 @@
 @import './variables.scss';
 
 .contact {
+    position: relative;
+
+    img {
+        @include medidas(15%, auto);
+        position: absolute;
+        right: 3rem;
+        bottom: 25%;
+        filter: opacity(60%);
+    }
+}
+
+.contact-form {
     @include medidas(100%, 100vh);
     display: flex;
     flex-direction: column;
