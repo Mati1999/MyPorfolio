@@ -15,10 +15,10 @@
     background-size: cover;
 
     img {
-        @include medidas(30%, auto);
+        @include medidas(70%, auto);
         position: absolute;
         bottom: 0;
-        left: 0;
+        filter: opacity(30%);
     }
 
     h2 {
