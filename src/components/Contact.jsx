@@ -53,11 +53,11 @@ const Contact = () => {
                 <h2>Contact</h2>
                 <form onSubmit={onSubmit}>
                     <div className='names'>
-                        <input id='first-name' type='text' name='first_name' placeholder='First name' value={toSend.first_name} onChange={handleOnChange} />
-                        <input id='last-name' type='text' name='last_name' placeholder='Last name' value={toSend.last_name} onChange={handleOnChange} />
+                        <input id='first-name' type='text' name='first_name' placeholder='First name' value={toSend.first_name} onChange={handleOnChange} required />
+                        <input id='last-name' type='text' name='last_name' placeholder='Last name' value={toSend.last_name} onChange={handleOnChange} required />
                     </div>
-                    <input id='email' type='text' name='reply_to' placeholder='Yourt email' value={toSend.reply_to} onChange={handleOnChange} />
-                    <textarea id='message' type='text' name='message' placeholder='Message' value={toSend.message} onChange={handleOnChange} />
+                    <input id='email' type='email' name='reply_to' placeholder='Yourt email' value={toSend.reply_to} onChange={handleOnChange} required />
+                    <textarea id='message' type='text' name='message' placeholder='Message' value={toSend.message} onChange={handleOnChange} required />
                     <button type='submit'>Submit</button>
                     <ToastContainer autoClose={2000} />
                 </form>

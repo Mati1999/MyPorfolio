@@ -15,7 +15,7 @@
     background-size: cover;
 
     img {
-        @include medidas(70%, auto);
+        @include medidas(80%, auto);
         position: absolute;
         bottom: 0;
         filter: opacity(30%);
