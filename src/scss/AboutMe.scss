@@ -17,7 +17,7 @@
     img {
         @include medidas(80%, auto);
         position: absolute;
-        bottom: 0;
+        top: 0;
         filter: opacity(30%);
     }
 
