@@ -16,26 +16,32 @@ const Projects = () => {
                     </p>
                     <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
                         <img src={animaBooks} alt='' />
-                        <div>
-                            <a href='https://anima-books-gamma.vercel.app/' target='_blank'>
-                                Live
-                            </a>
-                            <a href='https://github.com/Mati1999/AnimaBooks' target='_blank'>
-                                Code
-                            </a>
+                        <div className='projectLinksContainer'>
+                            <h6>Admin User: admin@admin.com</h6>
+                            <h6>Admin Pwd: admin1234</h6>
+                            <div className='projectLinks'>
+                                <a href='https://anima-books-gamma.vercel.app/' target='_blank'>
+                                    Live
+                                </a>
+                                <a href='https://github.com/Mati1999/AnimaBooks' target='_blank'>
+                                    Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='project '>
                     <div className='project-content' data-aos='fade-right' data-aos-duration='1000'>
                         <img src={checkIn} alt='' />
-                        <div>
-                            <a href='https://check-in-js.vercel.app/' target='_blank'>
-                                Live
-                            </a>
-                            <a href='https://github.com/Mati1999/CheckIn-JS' target='_blank'>
-                                Code
-                            </a>
+                        <div className='projectLinksContainer'>
+                            <div className='projectLinks'>
+                                <a href='https://check-in-js.vercel.app/' target='_blank'>
+                                    Live
+                                </a>
+                                <a href='https://github.com/Mati1999/CheckIn-JS' target='_blank'>
+                                    Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <p className='project-info' data-aos='fade-left' data-aos-duration='1000'>
@@ -50,13 +56,15 @@ const Projects = () => {
                     </p>
                     <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
                         <img src={portfolio} alt='' />
-                        <div>
-                            <a href='https://my-porfolio-roan.vercel.app/' target='_blank'>
-                                Live
-                            </a>
-                            <a href='https://github.com/Mati1999/MyPorfolio' target='_blank'>
-                                Code
-                            </a>
+                        <div className='projectLinksContainer'>
+                            <div className='projectLinks'>
+                                <a href='https://my-porfolio-roan.vercel.app/' target='_blank'>
+                                    Live
+                                </a>
+                                <a href='https://github.com/Mati1999/MyPorfolio' target='_blank'>
+                                    Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

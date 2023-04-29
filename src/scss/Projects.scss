@@ -63,12 +63,12 @@
             transition: all 0.3s ease;
         }
     }
-    div {
+    .projectLinksContainer {
         @include medidas(100%, 100%);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        gap: 7rem;
+        justify-content: center;
         position: absolute;
         top: 0;
         opacity: 0;
@@ -80,6 +80,17 @@
             visibility: visible;
             transition: all 0.3s ease;
         }
+        h6 {
+            font-weight: 600;
+        }
+    }
+
+    .projectLinks {
+        @include medidas(100%, 30%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
         transition: all 0.3s ease;
     }
     a {
