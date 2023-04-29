@@ -1,6 +1,8 @@
 import React from 'react';
 import '../scss/Projects.scss';
-import pic from '../static/pic.png';
+import animaBooks from '../static/animaBooks.gif';
+import checkIn from '../static/checkIn.gif';
+import portfolio from '../static/portfolio.gif';
 
 const Projects = () => {
     return (
@@ -13,7 +15,7 @@ const Projects = () => {
                         voluptates dolorem veniam dolores, error eaque.
                     </p>
                     <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
-                        <img src={pic} alt='' />
+                        <img src={animaBooks} alt='' />
                         <div>
                             <a href=''>Live</a>
                             <a href=''>Code</a>
@@ -22,7 +24,7 @@ const Projects = () => {
                 </div>
                 <div className='project '>
                     <div className='project-content' data-aos='fade-right' data-aos-duration='1000'>
-                        <img src={pic} alt='' />
+                        <img src={checkIn} alt='' />
                         <div>
                             <a href=''>Live</a>
                             <a href=''>Code</a>
@@ -39,7 +41,7 @@ const Projects = () => {
                         voluptates dolorem veniam dolores, error eaque.
                     </p>
                     <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
-                        <img src={pic} alt='' />
+                        <img src={portfolio} alt='' />
                         <div>
                             <a href=''>Live</a>
                             <a href=''>Code</a>
