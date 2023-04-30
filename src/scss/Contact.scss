@@ -1,36 +1,39 @@
 @import './variables.scss';
 
-.contact {
-    position: relative;
-
-    img {
-        @include medidas(15%, auto);
-        position: absolute;
-        right: 3rem;
-        bottom: 25%;
-        filter: opacity(60%);
-    }
-}
-
 .contact-form {
     @include medidas(100%, 100vh);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     background-color: $general;
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 8rem 2rem 2rem 2rem;
 
-    form {
-        @include medidas(70%, 70%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+    img {
+        @include medidas(30%, auto);
+        position: relative;
+        right: 3rem;
+        filter: opacity(80%);
     }
+}
+
+.contact-formAndImg {
+    @include medidas(100%, 90%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+form {
+    @include medidas(55%, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
     .names {
-        @include medidas(90%, 20%);
+        @include medidas(90%, 15%);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -39,7 +42,7 @@
         }
     }
     input {
-        @include medidas(90%, 20%);
+        @include medidas(90%, 15%);
         background-color: transparent;
         outline: none;
         border: 1px solid $details;
@@ -62,7 +65,7 @@
         }
     }
     textarea {
-        @include medidas(90%, 60%);
+        @include medidas(90%, 50%);
         background-color: transparent;
         outline: none;
         border: 1px solid $details;
@@ -75,7 +78,7 @@
     }
 
     button {
-        @include medidas(30%, 20%);
+        @include medidas(30%, 10%);
         background-color: transparent;
         outline: none;
         border: 1px solid $details-transition;
@@ -88,8 +91,11 @@
     }
 }
 
+.Toastify {
+    position: absolute;
+}
+
 .Toastify__toast-container {
-    @include medidas(100%, 20%);
     position: fixed;
     top: 10rem;
 }

@@ -47,10 +47,9 @@ const Contact = () => {
     };
 
     return (
-        <div className='contact'>
-            <img src={email} alt='' />
-            <div className='contact-form'>
-                <h2>Contact</h2>
+        <div className='contact-form'>
+            <h2>Contact</h2>
+            <div className='contact-formAndImg'>
                 <form onSubmit={onSubmit}>
                     <div className='names'>
                         <input id='first-name' type='text' name='first_name' placeholder='First name' value={toSend.first_name} onChange={handleOnChange} required />
@@ -61,6 +60,7 @@ const Contact = () => {
                     <button type='submit'>Submit</button>
                     <ToastContainer autoClose={2000} />
                 </form>
+                <img src={email} alt='' />
             </div>
         </div>
     );

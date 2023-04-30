@@ -24,14 +24,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .project {
     @include medidas(60%, 35%);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 2rem;
 }
 
