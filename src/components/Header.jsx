@@ -17,7 +17,7 @@ const Header = () => {
             <ul className='navigation'>
                 <li data-aos='fade-down' data-aos-duration='400'>
                     <Link to='aboutMe' smooth={true}>
-                        About me
+                        Sobre mi
                     </Link>
                 </li>
                 <li data-aos='fade-down' data-aos-duration='500'>
@@ -27,12 +27,12 @@ const Header = () => {
                 </li>
                 <li data-aos='fade-down' data-aos-duration='600'>
                     <Link to='projects' smooth={true}>
-                        Projects
+                        Proyectos
                     </Link>
                 </li>
                 <li data-aos='fade-down' data-aos-duration='700'>
                     <Link to='contact' smooth={true}>
-                        Contact
+                        Contacto
                     </Link>
                 </li>
             </ul>

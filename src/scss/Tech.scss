@@ -12,8 +12,9 @@
     background-size: cover;
 
     .tech-col {
-        @include medidas(100%, 80%);
+        @include medidas(100%, 70%);
         display: flex;
+        margin-top: 2rem;
         background-color: $general-transparent-soft;
     }
 }
@@ -24,21 +25,13 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    @include medidas(50%, 100%);
+    @include medidas(100%, 100%);
     border: 1px solid $general-light;
     border-radius: 1rem;
     padding: 1rem 0 0 0;
 
-    &--left {
-        margin: 0 0.5rem 0 1rem;
-    }
-    &--right {
-        margin: 0 1rem 0 0.5rem;
-    }
-
     &--title {
-        @include medidas(100%, 30%);
-        margin-bottom: 2rem;
+        @include medidas(100%, 35%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -60,6 +53,7 @@
     }
 
     &--technologies {
+        @include medidas(25%, auto);
         h2 {
             color: $details-terciary;
         }
@@ -68,6 +62,6 @@
 
 .technologies {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }

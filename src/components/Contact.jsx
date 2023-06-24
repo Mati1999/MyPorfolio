@@ -47,17 +47,17 @@ const Contact = () => {
     };
 
     return (
-        <div className='contact-form'>
-            <h2>Contact</h2>
+        <div id='contact' className='contact-form'>
+            <h2>Contacto</h2>
             <div className='contact-formAndImg'>
                 <form onSubmit={onSubmit}>
                     <div className='names'>
-                        <input id='first-name' type='text' name='first_name' placeholder='First name' value={toSend.first_name} onChange={handleOnChange} required />
-                        <input id='last-name' type='text' name='last_name' placeholder='Last name' value={toSend.last_name} onChange={handleOnChange} required />
+                        <input id='first-name' type='text' name='first_name' placeholder='Nombre' value={toSend.first_name} onChange={handleOnChange} required />
+                        <input id='last-name' type='text' name='last_name' placeholder='Apellido' value={toSend.last_name} onChange={handleOnChange} required />
                     </div>
-                    <input id='email' type='email' name='reply_to' placeholder='Yourt email' value={toSend.reply_to} onChange={handleOnChange} required />
-                    <textarea id='message' type='text' name='message' placeholder='Message' value={toSend.message} onChange={handleOnChange} required />
-                    <button type='submit'>Submit</button>
+                    <input id='email' type='email' name='reply_to' placeholder='Correo electrónico' value={toSend.reply_to} onChange={handleOnChange} required />
+                    <textarea id='message' type='text' name='message' placeholder='Ingrese su mensaje...' value={toSend.message} onChange={handleOnChange} required />
+                    <button type='submit'>Enviar</button>
                     <ToastContainer autoClose={2000} />
                 </form>
                 <img src={email} alt='' />

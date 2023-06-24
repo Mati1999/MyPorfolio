@@ -7,12 +7,17 @@ import portfolio from '../static/portfolio.gif';
 const Projects = () => {
     return (
         <div id='projects' className='projects'>
-            <h2>Projects</h2>
+            <h2>Proyectos</h2>
             <div className='projects-container '>
                 <div className='project '>
                     <p className='project-info' data-aos='fade-right' data-aos-duration='1000'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in quis ipsa fugiat facere! Odit, voluptatum neque? Reiciendis iste expedita eveniet neque nesciunt veritatis,
-                        voluptates dolorem veniam dolores, error eaque.
+                        Sitio web E-commerce de Mangas.
+                        <div>
+                            <b>Funcionalidades:</b> Registro y LogIn, Perfil administrador para control de stock, historial de compras.
+                        </div>
+                        <div>
+                            <b>Tecnologías:</b> HTML, CSS, Sass, Javascript, React y Firebase.
+                        </div>
                     </p>
                     <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
                         <img src={animaBooks} alt='' />
@@ -45,14 +50,24 @@ const Projects = () => {
                         </div>
                     </div>
                     <p className='project-info' data-aos='fade-left' data-aos-duration='1000'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in quis ipsa fugiat facere! Odit, voluptatum neque? Reiciendis iste expedita eveniet neque nesciunt veritatis,
-                        voluptates dolorem veniam dolores, error eaque.
+                        Sitio web E-commerce de Moda.
+                        <div>
+                            <b>Funcionalidades:</b> LogIn, compra de ropa.
+                        </div>
+                        <div>
+                            <b>Tecnologías:</b> HTML, CSS, Sass, Javascript.
+                        </div>
                     </p>
                 </div>
                 <div className='project '>
                     <p className='project-info' data-aos='fade-right' data-aos-duration='1000'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in quis ipsa fugiat facere! Odit, voluptatum neque? Reiciendis iste expedita eveniet neque nesciunt veritatis,
-                        voluptates dolorem veniam dolores, error eaque.
+                        Portfolio personal.
+                        <div>
+                            <b>Funcionalidades:</b> Contratación 🤩.
+                        </div>
+                        <div>
+                            <b>Tecnologías:</b> HTML, CSS, Sass, Javascript y React.
+                        </div>
                     </p>
                     <div className='project-content' data-aos='fade-left' data-aos-duration='1000'>
                         <img src={portfolio} alt='' />
