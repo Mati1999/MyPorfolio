@@ -31,6 +31,11 @@ const Header = () => {
                     </Link>
                 </li>
                 <li data-aos='fade-down' data-aos-duration='700'>
+                    <Link to='experience' smooth={true}>
+                        Experiencia
+                    </Link>
+                </li>
+                <li data-aos='fade-down' data-aos-duration='700'>
                     <Link to='contact' smooth={true}>
                         Contacto
                     </Link>

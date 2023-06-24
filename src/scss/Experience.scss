@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+.experience {
+    @include medidas(100%, 100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
