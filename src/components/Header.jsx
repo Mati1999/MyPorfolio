@@ -20,6 +20,11 @@ const Header = () => {
                         Sobre mi
                     </Link>
                 </li>
+                <li data-aos='fade-down' data-aos-duration='700'>
+                    <Link to='experience' smooth={true}>
+                        Experiencia
+                    </Link>
+                </li>
                 <li data-aos='fade-down' data-aos-duration='500'>
                     <Link to='tech' smooth={true}>
                         Tech
@@ -28,11 +33,6 @@ const Header = () => {
                 <li data-aos='fade-down' data-aos-duration='600'>
                     <Link to='projects' smooth={true}>
                         Proyectos
-                    </Link>
-                </li>
-                <li data-aos='fade-down' data-aos-duration='700'>
-                    <Link to='experience' smooth={true}>
-                        Experiencia
                     </Link>
                 </li>
                 <li data-aos='fade-down' data-aos-duration='700'>

@@ -23,7 +23,7 @@ const Projects = () => {
                         <img src={animaBooks} alt='' />
                         <div className='projectLinksContainer'>
                             <h6>Admin User: admin@admin.com</h6>
-                            <h6>Admin Pwd: admin1234</h6>
+                            <h6>Admin Password: admin1234</h6>
                             <div className='projectLinks'>
                                 <a href='https://anima-books-gamma.vercel.app/' target='_blank'>
                                     Live

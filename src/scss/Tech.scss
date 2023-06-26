@@ -11,6 +11,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
     .tech-col {
         @include medidas(100%, 70%);
         display: flex;
@@ -36,7 +41,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        h2 {
+        h3 {
             color: $details;
         }
         h5 {
@@ -54,7 +59,7 @@
 
     &--technologies {
         @include medidas(25%, auto);
-        h2 {
+        h3 {
             color: $details-terciary;
         }
     }
