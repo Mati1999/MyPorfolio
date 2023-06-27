@@ -1,15 +1,114 @@
 @import './variables.scss';
 
-header {
+.header {
     position: fixed;
     z-index: 100;
     top: 0;
+    left: 0;
     @include medidas(100%, 10vh);
-    padding: 0 3rem;
+    padding: 0 0 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $general;
+    transition: all 0.3s ease-out;
+
+    @include mobile {
+        @include medidas(100vw, 100vh);
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 0;
+    }
+}
+
+.header-open {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    @include medidas(100%, 10vh);
+    padding: 0 0 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $general;
+    left: 100%;
+    transition: all 0.3s ease-out;
+    @include mobile {
+        @include medidas(100vw, 100vh);
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 0;
+    }
+}
+
+.menu {
+    display: none;
+    @include mobile {
+        display: inline;
+        @include medidas(50px, 2px);
+        background: $details;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        transition: all 0.3s ease-out;
+        z-index: 10000;
+
+        &:after {
+            content: '';
+            display: inline;
+            @include medidas(50px, 2px);
+            background: $details;
+            position: absolute;
+            top: 1rem;
+            transition: all 0.3s ease-out;
+        }
+        &:before {
+            content: '';
+            display: inline;
+            @include medidas(50px, 2px);
+            background: $details;
+            position: absolute;
+            top: -1rem;
+            transition: all 0.3s ease-out;
+        }
+    }
+}
+
+.menu-open {
+    display: none;
+    @include mobile {
+        display: inline;
+        @include medidas(50px, 2px);
+        background: transparent;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 10000;
+        transition: all 0.3s ease-out;
+
+        &:after {
+            content: '';
+            display: inline;
+            @include medidas(50px, 2px);
+            background: $details;
+            position: absolute;
+            top: 0rem;
+            transform: rotate(-45deg);
+            transition: all 0.3s ease-out;
+        }
+        &:before {
+            content: '';
+            display: inline;
+            @include medidas(50px, 2px);
+            background: $details;
+            position: absolute;
+            top: 0rem;
+            transform: rotate(45deg);
+            transition: all 0.3s ease-out;
+        }
+    }
 }
 
 .logoContainer {
@@ -21,6 +120,10 @@ header {
         @include medidas(30%, 30%);
         cursor: pointer;
     }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .navigation {
@@ -30,6 +133,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+        @include medidas(100%, 70%);
+        flex-direction: column;
+    }
 
     li {
         list-style-type: none;
@@ -66,6 +174,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+        @include medidas(100%, 15%);
+    }
 
     a {
         @include medidas(20%, 100%);

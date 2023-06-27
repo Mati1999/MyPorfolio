@@ -13,3 +13,9 @@ $general-transparent-soft: #222222f8;
     width: $width;
     height: $height;
 }
+
+@mixin mobile {
+    @media only screen and (max-width: 576px) {
+        @content;
+    }
+}
