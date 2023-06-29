@@ -12,6 +12,10 @@
     background-size: cover;
     background-position: -10rem;
     font-weight: 600;
+    @include mobile {
+        @include medidas(100%, 100%);
+        padding: 3rem 0 2rem 0;
+    }
 
     h2 {
         font-size: 2.5rem;
@@ -33,11 +37,20 @@
         justify-content: space-between;
         align-items: start;
         padding: 0 0 0 1rem;
+        @include mobile {
+            flex-direction: column-reverse;
+        }
 
         &--section {
             @include medidas(50%, 100%);
             overflow-y: auto;
             padding: 0 0.5rem;
+            @include mobile {
+                @include medidas(100%, 100%);
+                overflow: hidden;
+                padding: 0;
+            }
+
             &::-webkit-scrollbar {
                 width: 3px;
                 background: $general;
