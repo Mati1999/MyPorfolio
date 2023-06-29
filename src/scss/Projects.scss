@@ -12,6 +12,9 @@
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1418%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(34%2c 34%2c 34%2c 1)'%3e%3c/rect%3e%3cpath d='M 1077%2c-211.7361814013948 C 944.6%2c-174.34 467%2c-99.54 415%2c-24.736181401394788 C 363%2c50.06 822.6%2c87.46 817%2c162.2638185986052 C 811.4%2c237.06 388.6%2c274.46 387%2c349.2638185986052 C 385.4%2c424.06 813%2c494.12 809%2c536.2638185986052 C 805%2c578.41 455.4%2c555.25 367%2c560' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 1171%2c-154.1357378850913 C 1000.6%2c-116.74 387.4%2c-41.94 319%2c32.86426211490872 C 250.6%2c107.66 831.4%2c145.06 829%2c219.8642621149087 C 826.6%2c294.66 266.2%2c332.06 307%2c406.86426211490874 C 347.8%2c481.66 969.2%2c563.24 1033%2c593.8642621149087 C 1096.8%2c624.49 707.4%2c566.77 626%2c560' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 445%2c-109.85541341238253 C 545.2%2c-72.46 914%2c2.34 946%2c77.14458658761747 C 978%2c151.94 589.4%2c189.34 605%2c264.1445865876175 C 620.6%2c338.94 1076.4%2c376.34 1024%2c451.1445865876175 C 971.6%2c525.94 328%2c616.37 343%2c638.1445865876175 C 358%2c659.92 947.8%2c575.63 1099%2c560' stroke='rgba(0%2c 76%2c 49%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1418'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-size: cover;
     background-position: -20rem;
+    @include mobile {
+        padding: 3rem 0 1rem 0;
+    }
 
     h2 {
         font-size: 2.5rem;
@@ -27,14 +30,48 @@
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+    @include mobile {
+        padding: 0 1rem;
+    }
 }
 
 .project {
     @include medidas(60%, 35%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: start;
     gap: 2rem;
+    @include mobile {
+        @include medidas(100%, 35%);
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 0 1rem 0;
+    }
+
+    h3 {
+        font-weight: 900;
+        font-size: 1.8rem;
+        @include mobile {
+        }
+    }
+    &-infoContainer {
+        @include medidas(100%, 35%);
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+            @include medidas(100%, 35%);
+            flex-direction: column;
+            gap: 1rem;
+            margin: 0 0 1rem 0;
+        }
+    }
+}
+
+.project-reverse {
+    @include mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 .project-info {
@@ -46,8 +83,16 @@
     align-items: start;
     font-size: 1.1rem;
     letter-spacing: 1px;
+    @include mobile {
+        @include medidas(100%, 100%);
+    }
     div {
         margin-top: 0.5rem;
+    }
+    b {
+        @include mobile {
+            font-size: 1.3rem;
+        }
     }
 }
 
@@ -58,6 +103,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include mobile {
+        @include medidas(100%, 100%);
+    }
 
     img {
         @include medidas(100%, 12rem);

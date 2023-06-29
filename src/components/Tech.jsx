@@ -9,7 +9,7 @@ const Tech = () => {
                 <div className='tech-column tech-column'>
                     <div className='tech-column--title'>
                         <h3>Full Stack Developer</h3>
-                        <h5>¿Qué hago con esto? Crear proyectos increíbles desde cero y convertir mis ideas en realidad.</h5>
+                        <h5>¿Qué realizo con esto? Creo proyectos increíbles desde cero y convierto mis ideas en realidad.</h5>
                     </div>
                     <div className='tech-column--dev'>
                         <div className='tech-column--technologies'>
@@ -45,11 +45,13 @@ const Tech = () => {
                         </div>
                         <div className='tech-column--technologies'>
                             <h3>Dev tools</h3>
-                            <div>
-                                <h5>Figma</h5>
-                                <h5>Github</h5>
-                                <h5>Vercel</h5>
-                                <h5>Gitbash</h5>
+                            <div className='technologies'>
+                                <div>
+                                    <h5>Figma</h5>
+                                    <h5>Github</h5>
+                                    <h5>Vercel</h5>
+                                    <h5>Gitbash</h5>
+                                </div>
                             </div>
                         </div>
                     </div>

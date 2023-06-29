@@ -9,11 +9,18 @@
     background-color: $general;
     padding: 8rem 2rem 2rem 2rem;
 
+    @include mobile {
+        padding: 3rem 0 2rem 0;
+    }
+
     img {
         @include medidas(30%, auto);
         position: relative;
         right: 3rem;
         filter: opacity(80%);
+        @include mobile {
+            display: none;
+        }
     }
     h2 {
         font-size: 2.5rem;
@@ -26,6 +33,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: end;
+    @include mobile {
+        align-items: center;
+    }
 }
 
 form {
@@ -35,6 +45,10 @@ form {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    @include mobile {
+        @include medidas(100%, 90%);
+        z-index: 10;
+    }
 
     .names {
         @include medidas(90%, 15%);
@@ -88,6 +102,11 @@ form {
         border: 1px solid $details-transition;
         border-radius: 0.5rem;
         font-weight: 600;
+
+        @include mobile {
+            @include medidas(70%, 10%);
+        }
+
         &:hover {
             background-color: $details-secondary;
             transition: 0.3s all ease;
