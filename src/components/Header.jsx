@@ -26,43 +26,43 @@ const Header = () => {
                     <img className='toTop' src={MA} alt='' onClick={scrollToTop} />
                 </Link>
                 <ul className='navigation'>
-                    <li data-aos='fade-down' data-aos-duration='400'>
+                    <li data-aos='fade-down' data-aos-duration='400' data-aos-offset='0'>
                         <Link to='aboutMe' smooth={true} onClick={openMenu} duration={800}>
                             Sobre mi
                         </Link>
                     </li>
-                    <li data-aos='fade-down' data-aos-duration='500'>
+                    <li data-aos='fade-down' data-aos-duration='500' data-aos-offset='0'>
                         <Link to='experience' smooth={true} onClick={openMenu} duration={800}>
                             Experiencia
                         </Link>
                     </li>
-                    <li data-aos='fade-down' data-aos-duration='600'>
+                    <li data-aos='fade-down' data-aos-duration='600' data-aos-offset='0'>
                         <Link to='tech' smooth={true} onClick={openMenu} duration={800}>
                             Tech
                         </Link>
                     </li>
-                    <li data-aos='fade-down' data-aos-duration='700'>
+                    <li data-aos='fade-down' data-aos-duration='700' data-aos-offset='0'>
                         <Link to='projects' smooth={true} onClick={openMenu} duration={800}>
                             Proyectos
                         </Link>
                     </li>
-                    <li data-aos='fade-down' data-aos-duration='800'>
+                    <li data-aos='fade-down' data-aos-duration='800' data-aos-offset='0'>
                         <Link to='contact' smooth={true} onClick={openMenu} duration={800}>
                             Contacto
                         </Link>
                     </li>
                 </ul>
                 <div className='socialLinks'>
-                    <a href='https://github.com/Mati1999' target='_blank' data-aos='fade-down' data-aos-duration='800'>
+                    <a href='https://github.com/Mati1999' target='_blank' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0'>
                         <ion-icon name='logo-github'></ion-icon>
                     </a>
-                    <a href='https://www.instagram.com/matias_aguilera99/' target='_blank' data-aos='fade-down' data-aos-duration='900'>
+                    <a href='https://www.instagram.com/matias_aguilera99/' target='_blank' data-aos='fade-down' data-aos-duration='900' data-aos-offset='0'>
                         <ion-icon name='logo-instagram'></ion-icon>
                     </a>
-                    <a href='https://www.linkedin.com/in/matiasaguilera/' target='_blank' data-aos='fade-down' data-aos-duration='1000'>
+                    <a href='https://www.linkedin.com/in/matiasaguilera/' target='_blank' data-aos='fade-down' data-aos-duration='1000' data-aos-offset='0'>
                         <ion-icon name='logo-linkedin'></ion-icon>
                     </a>
-                    <a href='https://twitter.com/mati_aguilera99' target='_blank' data-aos='fade-down' data-aos-duration='1100'>
+                    <a href='https://twitter.com/mati_aguilera99' target='_blank' data-aos='fade-down' data-aos-duration='1100' data-aos-offset='0'>
                         <ion-icon name='logo-twitter'></ion-icon>
                     </a>
                 </div>
