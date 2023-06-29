@@ -5,7 +5,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
     const [menu, setmenu] = useState('menu');
-    const [moveHeader, setMoveHeader] = useState('header-open');
+    const [moveHeader, setMoveHeader] = useState('header');
 
     const openMenu = (e) => {
         menu === 'menu' ? setmenu('menu-open') : setmenu('menu');
@@ -22,32 +22,32 @@ const Header = () => {
                 <span></span>
             </button>
             <header className={moveHeader}>
-                <Link className='toTop logoContainer' smooth={true} data-aos='fade-down' data-aos-duration='300'>
+                <Link className='toTop logoContainer' smooth={true} data-aos='fade-down' data-aos-duration='300' onClick={openMenu}>
                     <img className='toTop' src={MA} alt='' onClick={scrollToTop} />
                 </Link>
                 <ul className='navigation'>
                     <li data-aos='fade-down' data-aos-duration='400'>
-                        <Link to='aboutMe' smooth={true}>
+                        <Link to='aboutMe' smooth={true} onClick={openMenu}>
                             Sobre mi
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='500'>
-                        <Link to='experience' smooth={true}>
+                        <Link to='experience' smooth={true} onClick={openMenu}>
                             Experiencia
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='600'>
-                        <Link to='tech' smooth={true}>
+                        <Link to='tech' smooth={true} onClick={openMenu}>
                             Tech
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='700'>
-                        <Link to='projects' smooth={true}>
+                        <Link to='projects' smooth={true} onClick={openMenu}>
                             Proyectos
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='800'>
-                        <Link to='contact' smooth={true}>
+                        <Link to='contact' smooth={true} onClick={openMenu}>
                             Contacto
                         </Link>
                     </li>
