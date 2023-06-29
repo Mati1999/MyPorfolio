@@ -171,6 +171,9 @@
         justify-content: center;
         align-items: center;
         color: $details;
+        @include mobile {
+            @include medidas(90%, 50%);
+        }
         a {
             position: relative;
             &::before {
