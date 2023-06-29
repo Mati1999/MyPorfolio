@@ -22,32 +22,32 @@ const Header = () => {
                 <span></span>
             </button>
             <header className={moveHeader}>
-                <Link className='toTop logoContainer' smooth={true} data-aos='fade-down' data-aos-duration='300' onClick={openMenu}>
+                <Link className='toTop logoContainer' smooth={true} data-aos='fade-down' data-aos-duration='300' onClick={openMenu} duration={800}>
                     <img className='toTop' src={MA} alt='' onClick={scrollToTop} />
                 </Link>
                 <ul className='navigation'>
                     <li data-aos='fade-down' data-aos-duration='400'>
-                        <Link to='aboutMe' smooth={true} onClick={openMenu}>
+                        <Link to='aboutMe' smooth={true} onClick={openMenu} duration={800}>
                             Sobre mi
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='500'>
-                        <Link to='experience' smooth={true} onClick={openMenu}>
+                        <Link to='experience' smooth={true} onClick={openMenu} duration={800}>
                             Experiencia
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='600'>
-                        <Link to='tech' smooth={true} onClick={openMenu}>
+                        <Link to='tech' smooth={true} onClick={openMenu} duration={800}>
                             Tech
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='700'>
-                        <Link to='projects' smooth={true} onClick={openMenu}>
+                        <Link to='projects' smooth={true} onClick={openMenu} duration={800}>
                             Proyectos
                         </Link>
                     </li>
                     <li data-aos='fade-down' data-aos-duration='800'>
-                        <Link to='contact' smooth={true} onClick={openMenu}>
+                        <Link to='contact' smooth={true} onClick={openMenu} duration={800}>
                             Contacto
                         </Link>
                     </li>
