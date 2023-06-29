@@ -4,8 +4,8 @@ import MA from '../static/MA.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
-    const [menu, setmenu] = useState('menu-open');
-    const [moveHeader, setMoveHeader] = useState('header');
+    const [menu, setmenu] = useState('menu');
+    const [moveHeader, setMoveHeader] = useState('header-open');
 
     const openMenu = (e) => {
         menu === 'menu' ? setmenu('menu-open') : setmenu('menu');
@@ -18,7 +18,9 @@ const Header = () => {
     };
     return (
         <>
-            <span className={menu} onClick={openMenu}></span>
+            <button className={menu} onClick={openMenu}>
+                <span></span>
+            </button>
             <header className={moveHeader}>
                 <Link className='toTop logoContainer' smooth={true} data-aos='fade-down' data-aos-duration='300'>
                     <img className='toTop' src={MA} alt='' onClick={scrollToTop} />

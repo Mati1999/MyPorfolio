@@ -4,7 +4,6 @@
     position: fixed;
     z-index: 100;
     top: 0;
-    left: 0;
     @include medidas(100%, 10vh);
     padding: 0 0 0 3rem;
     display: flex;
@@ -19,20 +18,22 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 3rem 0;
+        left: 0;
+        transition: all 0.3s ease-out;
     }
 }
 
 .header-open {
     position: fixed;
     z-index: 100;
-    top: 0;
     @include medidas(100%, 10vh);
     padding: 0 0 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $general;
-    left: 100%;
+    top: 0;
+    left: 0;
     transition: all 0.3s ease-out;
     @include mobile {
         @include medidas(100vw, 100vh);
@@ -40,20 +41,30 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 3rem 0;
+        left: 100%;
+        transition: all 0.3s ease-out;
     }
 }
 
 .menu {
     display: none;
     @include mobile {
-        display: inline;
+        z-index: 10000;
+        border: none;
+        display: flex;
         @include medidas(50px, 2px);
         background: $details;
-        position: absolute;
+        position: fixed;
         top: 2rem;
-        right: 2rem;
-        transition: all 0.3s ease-out;
-        z-index: 10000;
+        right: 4rem;
+        transition: all 0.1s ease-out;
+
+        span {
+            @include medidas(100%, 100%);
+            display: block;
+            background: $details;
+            transition: all 0.1s ease-out;
+        }
 
         &:after {
             content: '';
@@ -62,6 +73,7 @@
             background: $details;
             position: absolute;
             top: 1rem;
+            right: 0;
             transition: all 0.3s ease-out;
         }
         &:before {
@@ -71,6 +83,7 @@
             background: $details;
             position: absolute;
             top: -1rem;
+            right: 0;
             transition: all 0.3s ease-out;
         }
     }
@@ -79,14 +92,22 @@
 .menu-open {
     display: none;
     @include mobile {
-        display: inline;
+        z-index: 10000;
+        border: none;
+        display: block;
         @include medidas(50px, 2px);
         background: transparent;
-        position: absolute;
+        position: fixed;
         top: 2rem;
-        right: 2rem;
-        z-index: 10000;
-        transition: all 0.3s ease-out;
+        right: 4rem;
+        transition: all 0.1s ease-out;
+
+        span {
+            @include medidas(100%, 100%);
+            display: block;
+            background: transparent;
+            transition: all 0.1s ease-out;
+        }
 
         &:after {
             content: '';
@@ -95,6 +116,7 @@
             background: $details;
             position: absolute;
             top: 0rem;
+            right: 0;
             transform: rotate(-45deg);
             transition: all 0.3s ease-out;
         }
@@ -105,6 +127,7 @@
             background: $details;
             position: absolute;
             top: 0rem;
+            right: 0;
             transform: rotate(45deg);
             transition: all 0.3s ease-out;
         }
