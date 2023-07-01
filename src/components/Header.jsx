@@ -54,7 +54,13 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className='socialLinks'>
-                    <a href='https://wa.me/542615454098' target='_blank' data-aos='fade-down' data-aos-duration='1100' data-aos-offset='0'>
+                    <a
+                        href='https://wa.me/542615454098/?text=Hola%20Matias,%20como%20estas?%20Me%20interesó%20tu%20portfolio%20y%20quería...'
+                        target='_blank'
+                        data-aos='fade-down'
+                        data-aos-duration='1100'
+                        data-aos-offset='0'
+                    >
                         <ion-icon name='logo-whatsapp'></ion-icon>{' '}
                     </a>
                     <a href='https://github.com/Mati1999' target='_blank' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0'>
