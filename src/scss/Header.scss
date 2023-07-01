@@ -12,6 +12,20 @@
     background-color: $general;
     transition: all 0.3s ease-out;
 
+    @include tablet-lg {
+        padding: 0 1rem;
+    }
+
+    @include tablet-md {
+        @include medidas(100vw, 100vh);
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 0;
+        left: 100%;
+        transition: all 0.3s ease-out;
+    }
+
     @include mobile {
         @include medidas(100vw, 100vh);
         bottom: 0;
@@ -27,7 +41,7 @@
     position: fixed;
     z-index: 100;
     @include medidas(100%, 10vh);
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +49,21 @@
     top: 0;
     left: 0;
     transition: all 0.3s ease-out;
+
+    @include tablet-lg {
+        padding: 0 1rem;
+    }
+
+    @include tablet-md {
+        @include medidas(100vw, 100vh);
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 0;
+        left: 0;
+        transition: all 0.3s ease-out;
+    }
+
     @include mobile {
         @include medidas(100vw, 100vh);
         bottom: 0;
@@ -48,6 +77,47 @@
 
 .menu {
     display: none;
+
+    @include tablet-md {
+        z-index: 10000;
+        border: none;
+        display: flex;
+        @include medidas(40px, 2px);
+        background: $details;
+        position: fixed;
+        top: 2rem;
+        right: 1rem;
+        transition: all 0.1s ease-out;
+
+        span {
+            @include medidas(100%, 100%);
+            display: block;
+            background: $details;
+            transition: all 0.1s ease-out;
+        }
+
+        &:after {
+            content: '';
+            display: inline;
+            @include medidas(40px, 2px);
+            background: $details;
+            position: absolute;
+            top: 0.8rem;
+            right: 0;
+            transition: all 0.3s ease-out;
+        }
+        &:before {
+            content: '';
+            display: inline;
+            @include medidas(40px, 2px);
+            background: $details;
+            position: absolute;
+            top: -0.8rem;
+            right: 0;
+            transition: all 0.3s ease-out;
+        }
+    }
+
     @include mobile {
         z-index: 10000;
         border: none;
@@ -91,6 +161,49 @@
 
 .menu-open {
     display: none;
+
+    @include tablet-md {
+        z-index: 10000;
+        border: none;
+        display: block;
+        @include medidas(40px, 2px);
+        background: transparent;
+        position: fixed;
+        top: 2rem;
+        right: 1rem;
+        transition: all 0.1s ease-out;
+
+        span {
+            @include medidas(100%, 100%);
+            display: block;
+            background: transparent;
+            transition: all 0.1s ease-out;
+        }
+
+        &:after {
+            content: '';
+            display: inline;
+            @include medidas(40px, 2px);
+            background: $details;
+            position: absolute;
+            top: 0rem;
+            right: 0;
+            transform: rotate(-45deg);
+            transition: all 0.3s ease-out;
+        }
+        &:before {
+            content: '';
+            display: inline;
+            @include medidas(40px, 2px);
+            background: $details;
+            position: absolute;
+            top: 0rem;
+            right: 0;
+            transform: rotate(45deg);
+            transition: all 0.3s ease-out;
+        }
+    }
+
     @include mobile {
         z-index: 10000;
         border: none;
@@ -139,14 +252,26 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    img {
-        @include medidas(30%, 30%);
-        cursor: pointer;
+
+    @include tablet-lg {
+        @include medidas(5%, 100%);
+    }
+
+    @include tablet-md {
+        @include medidas(25%, 20%);
+        justify-content: center;
     }
 
     @include mobile {
-        @include medidas(100%, 20%);
+        @include medidas(25%, 20%);
         justify-content: center;
+    }
+    img {
+        @include medidas(30%, 30%);
+        cursor: pointer;
+        @include tablet-lg {
+            @include medidas(100%, 30%);
+        }
     }
 }
 
@@ -158,11 +283,21 @@
     justify-content: space-between;
     align-items: center;
 
+    @include tablet-lg {
+        @include medidas(65%, 100%);
+    }
+
+    @include tablet-md {
+        @include medidas(100%, 70%);
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
     @include mobile {
         @include medidas(100%, 70%);
         flex-direction: column;
+        font-size: 1.3rem;
     }
-
     li {
         list-style-type: none;
         @include medidas(20%, 50%);
@@ -171,28 +306,35 @@
         justify-content: center;
         align-items: center;
         color: $details;
+
+        @include tablet-md {
+            @include medidas(90%, 50%);
+        }
+
         @include mobile {
             @include medidas(90%, 50%);
         }
         a {
             position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                width: 0%;
-                height: 2px;
-                bottom: 0;
-                background-color: $details;
-                left: 0;
-                transition: all 0.3s ease-in-out;
-            }
+            @include medidas(100%, auto);
+            text-align: center;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            background-color: $details;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+        }
 
-            &:hover::before {
-                width: 100%;
-            }
-            &:hover {
-                color: $details;
-            }
+        &:hover::before {
+            width: 100%;
+        }
+        &:hover {
+            color: $details;
         }
     }
 }
@@ -201,6 +343,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet-lg {
+        @include medidas(25%, 100%);
+        flex-wrap: wrap;
+    }
+
+    @include tablet-md {
+        @include medidas(100%, 15%);
+    }
 
     @include mobile {
         @include medidas(100%, 15%);
@@ -211,9 +362,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include tablet-lg {
+            @include medidas(15%, 100%);
+        }
     }
 }
 ion-icon {
     @include medidas(60%, 60%);
     color: $details;
+    @include tablet-lg {
+        @include medidas(100%, 60%);
+    }
 }

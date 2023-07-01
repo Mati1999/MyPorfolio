@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePicture from '../static/ProfilePicture.jpg';
+import profilePicture from '../static/ProfilePicture1.jpg';
 import '../scss/Presentation.scss';
 
 const Presentation = () => {

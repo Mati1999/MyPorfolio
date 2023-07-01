@@ -10,6 +10,12 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1550%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(34%2c 34%2c 34%2c 1)'%3e%3c/rect%3e%3cpath d='M118.82 61.59L179.45 96.59L179.45 166.59L118.82 201.59L58.2 166.59L58.2 96.59zM118.82 271.59L179.45 306.59L179.45 376.59L118.82 411.59L58.2 376.59L58.2 306.59zM179.45 166.59L240.07 201.59L240.07 271.59L179.45 306.59L118.82 271.59L118.82 201.59zM240.07 481.59L300.69 516.59L300.69 586.59L240.07 621.59L179.45 586.59L179.45 516.59zM300.69 166.59L361.32 201.59L361.32 271.59L300.69 306.59L240.07 271.59L240.07 201.59zM421.94 376.59L482.56 411.59L482.56 481.59L421.94 516.59L361.32 481.59L361.32 411.59zM543.19 376.59L603.81 411.59L603.81 481.59L543.19 516.59L482.56 481.59L482.56 411.59zM725.06 61.59L785.68 96.59L785.68 166.59L725.06 201.59L664.44 166.59L664.44 96.59zM785.68 376.59L846.31 411.59L846.31 481.59L785.68 516.59L725.06 481.59L725.06 411.59zM846.31 481.59L906.93 516.59L906.93 586.59L846.31 621.59L785.68 586.59L785.68 516.59zM1149.42 -43.41L1210.05 -8.41L1210.05 61.59L1149.42 96.59L1088.8 61.59L1088.8 -8.41zM1210.05 61.59L1270.67 96.59L1270.67 166.59L1210.05 201.59L1149.42 166.59L1149.42 96.59zM1149.42 376.59L1210.05 411.59L1210.05 481.59L1149.42 516.59L1088.8 481.59L1088.8 411.59zM1270.67 166.59L1331.29 201.59L1331.29 271.59L1270.67 306.59L1210.05 271.59L1210.05 201.59zM1331.29 271.59L1391.92 306.59L1391.92 376.59L1331.29 411.59L1270.67 376.59L1270.67 306.59zM1270.67 376.59L1331.29 411.59L1331.29 481.59L1270.67 516.59L1210.05 481.59L1210.05 411.59zM1331.29 481.59L1391.92 516.59L1391.92 586.59L1331.29 621.59L1270.67 586.59L1270.67 516.59zM1452.54 271.59L1513.16 306.59L1513.16 376.59L1452.54 411.59L1391.92 376.59L1391.92 306.59z' stroke='rgba(0%2c 255%2c 166%2c 0.3568627450980392)' stroke-width='2'%3e%3c/path%3e%3cpath d='M266.03 270.11L352.63 320.11L352.63 420.11L266.03 470.11L179.43 420.11L179.43 320.11zM266.03 570.11L352.63 620.11L352.63 720.11L266.03 770.11L179.43 720.11L179.43 620.11zM612.45 270.11L699.06 320.11L699.06 420.11L612.45 470.11L525.85 420.11L525.85 320.11zM1132.08 570.11L1218.68 620.11L1218.68 720.11L1132.08 770.11L1045.47 720.11L1045.47 620.11zM1565.11 120.11L1651.71 170.11L1651.71 270.11L1565.11 320.11L1478.5 270.11L1478.5 170.11z' stroke='rgba(0%2c 255%2c 166%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1550'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include tablet-md {
+        padding: 3rem 1rem 1rem 1rem;
+        @include medidas(100%, 100%);
+    }
+
     @include mobile {
         padding: 3rem 1rem 1rem 1rem;
         @include medidas(100%, 100%);
@@ -25,6 +31,11 @@
         display: flex;
         margin-top: 2rem;
         background-color: $general-transparent-soft;
+
+        @include tablet-md {
+            @include medidas(100%, 100%);
+        }
+
         @include mobile {
             @include medidas(100%, 100%);
         }
@@ -62,6 +73,13 @@
         padding: 0 4rem;
         display: flex;
         justify-content: space-between;
+
+        @include tablet-md {
+            @include medidas(100%, 100%);
+            flex-direction: column;
+            padding: 0 2rem;
+        }
+
         @include mobile {
             @include medidas(100%, 100%);
             flex-direction: column;
@@ -71,8 +89,12 @@
 
     &--technologies {
         @include medidas(25%, auto);
+        @include tablet-md {
+            @include medidas(100%, 100%);
+        }
         @include mobile {
             @include medidas(100%, 100%);
+            margin-bottom: 1.5rem;
         }
         h3 {
             color: $details-terciary;
@@ -84,6 +106,10 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+
+    @include tablet-md {
+        justify-content: space-evenly;
+    }
 
     div {
         @include mobile {

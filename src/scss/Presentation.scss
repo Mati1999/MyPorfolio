@@ -8,7 +8,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0 1rem;
+    @include tablet-lg {
+        padding: 0 4rem;
+    }
 
     @include mobile {
         padding: 0;
@@ -30,9 +33,14 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        @include tablet-lg {
+            @include medidas(auto, 50%);
+            margin-right: 2rem;
+        }
         @include mobile {
             @include medidas(100%, 50%);
             padding: 0 1rem;
+            margin-right: 0;
         }
     }
     figure {
@@ -41,13 +49,20 @@ section {
         justify-content: center;
         align-items: center;
         margin: 0;
+        @include tablet-lg {
+            @include medidas(auto, 40%);
+            margin-left: 2rem;
+        }
         @include mobile {
             @include medidas(60%, 40%);
+            margin-left: 0;
         }
+
         img {
             @include medidas(auto, 100%);
             object-fit: contain;
             border-radius: 1rem;
+            box-shadow: 3px 3px 16px black;
         }
     }
 }

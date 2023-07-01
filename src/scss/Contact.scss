@@ -21,6 +21,10 @@
         @include mobile {
             display: none;
         }
+
+        @include tablet-lg {
+            display: none;
+        }
     }
     h2 {
         font-size: 2.5rem;
@@ -48,6 +52,9 @@ form {
     @include mobile {
         @include medidas(100%, 90%);
         z-index: 10;
+    }
+    @include tablet-lg {
+        @include medidas(80%, 90%);
     }
 
     .names {

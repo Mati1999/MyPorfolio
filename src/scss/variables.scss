@@ -19,3 +19,13 @@ $general-transparent-soft: #222222f8;
         @content;
     }
 }
+@mixin tablet-md {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin tablet-lg {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
