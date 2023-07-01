@@ -40,7 +40,7 @@
     @include medidas(100%, 100%);
     border: 1px solid $general-light;
     border-radius: 1rem;
-    padding: 1rem 0 0 0;
+    padding: 1rem 0;
 
     &--title {
         @include medidas(100%, 35%);
