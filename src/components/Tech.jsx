@@ -25,7 +25,6 @@ const Tech = () => {
                                     <h5>JavaScript</h5>
                                     <h5>jQuery</h5>
                                     <h5>React</h5>
-                                    <h5>Git</h5>
                                 </div>
                             </div>
                         </div>
@@ -51,6 +50,7 @@ const Tech = () => {
                                     <h5>Github</h5>
                                     <h5>Vercel</h5>
                                     <h5>Gitbash</h5>
+                                    <h5>Git</h5>
                                 </div>
                             </div>
                         </div>
