@@ -31,7 +31,7 @@ section {
         justify-content: center;
         align-items: flex-start;
         @include mobile {
-            @include medidas(100%, 30%);
+            @include medidas(100%, 50%);
             padding: 0 1rem;
         }
     }

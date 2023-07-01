@@ -12,6 +12,7 @@
     background-size: cover;
     @include mobile {
         padding: 3rem 1rem 1rem 1rem;
+        @include medidas(100%, 100%);
     }
 
     h2 {

@@ -10,7 +10,7 @@ const Presentation = () => {
                     Matias Aguilera
                 </h1>
                 <h2 data-aos='fade-right' data-aos-duration='1500'>
-                    Front-End developer & Mentor
+                    Full Stack developer & Mentor
                 </h2>
             </div>
             <figure>
