@@ -89,6 +89,11 @@
 
     &--technologies {
         @include medidas(25%, auto);
+
+        @include tablet-lg {
+            @include medidas(30%, auto);
+        }
+
         @include tablet-md {
             @include medidas(100%, 100%);
         }
@@ -106,6 +111,11 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+
+    @include tablet-lg {
+        justify-content: center;
+        gap: 0.5rem;
+    }
 
     @include tablet-md {
         justify-content: space-evenly;
