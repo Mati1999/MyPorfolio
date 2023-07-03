@@ -79,7 +79,7 @@ const Experience = () => {
                             <h3>
                                 <b>Salesforce Developer</b> / LabsXD
                             </h3>
-                            <span>Julio 2022-Actualidad</span>
+                            <span>Julio 2022 - Actualidad</span>
                             <p>
                                 <b>Tareas:</b>
                                 <ul>
@@ -101,7 +101,7 @@ const Experience = () => {
                             <h3>
                                 <b>Tutor Javascript</b> / CoderHouse
                             </h3>
-                            <span>Abril 2022-Actualidad</span>
+                            <span>Abril 2022 - Actualidad</span>
                             <p>
                                 <b>Tareas:</b>
                                 <ul>
