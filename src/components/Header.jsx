@@ -72,9 +72,6 @@ const Header = () => {
                     <a href='https://www.linkedin.com/in/matiasaguilera/' target='_blank' data-aos='fade-down' data-aos-duration='1000' data-aos-offset='0'>
                         <ion-icon name='logo-linkedin'></ion-icon>
                     </a>
-                    <a href='https://twitter.com/mati_aguilera99' target='_blank' data-aos='fade-down' data-aos-duration='1100' data-aos-offset='0'>
-                        <ion-icon name='logo-twitter'></ion-icon>
-                    </a>
                     <a href={CV} download='CV-Matias Aguilera' target='_blank' data-aos='fade-down' data-aos-duration='1100' data-aos-offset='0'>
                         <ion-icon name='document-attach-outline'></ion-icon>
                     </a>
