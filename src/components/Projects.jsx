@@ -81,7 +81,7 @@ const Projects = () => {
                             <img src={portfolio} alt='' />
                             <div className='projectLinksContainer'>
                                 <div className='projectLinks'>
-                                    <a href='https://my-porfolio-roan.vercel.app/' target='_blank'>
+                                    <a href='https://my-porfolio-portfolio-2022.vercel.app/' target='_blank'>
                                         Live
                                     </a>
                                     <a href='https://github.com/Mati1999/MyPorfolio' target='_blank'>
